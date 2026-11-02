@@ -12,5 +12,10 @@
         "sourceMap": true,
         "outDir": "./dist"
     },
-    "include": ["src"]
+    "include": ["src", "webpack*.config.ts"],
+    "ts-node": {
+        "compilerOptions": {
+            "module": "CommonJS"
+        }
+    }
 }

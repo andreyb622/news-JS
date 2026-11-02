@@ -2,34 +2,44 @@ body {
     color: #fff;
     background: #17181c;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 header {
-    padding: 10px 30px;
+    padding: 20px 30px;
+    background: #212329;
+    border-bottom: 3px solid #30c5ff;
+    text-align: center;
 }
 
 header h1 {
+    margin: 0;
     font-size: 40px;
     font-weight: 800;
+    letter-spacing: 2px;
+}
+
+main {
+    flex: 1;
 }
 
 footer {
-    height: 100px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
-footer .copyright {
-    font-size: 14px;
-    color: #333;
-    text-align: center;
+
+footer a {
+    color: #70d6ff;
 }
-footer .copyright a {
-    color: #444;
-}
-footer .copyright a:hover {
-    color: #555;
-}
-footer .copyright:before {
-    content: '©';
+
+footer img {
+    display: block;
+    height: 40px;
 }

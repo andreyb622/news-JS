@@ -32,3 +32,25 @@ export interface INewsResponse {
     totalResults: number;
     articles: IArticle[];
 }
+
+export enum Endpoint {
+    Sources = 'sources',
+    Everything = 'everything',
+}
+
+export enum StatusCode {
+    Unauthorized = 401,
+    NotFound = 404,
+}
+
+export type QueryOptions = {
+    apiKey: string;
+    sources: string;
+};
+
+export type RequestParams = {
+    endpoint: Endpoint;
+    options?: Partial<QueryOptions>;
+};
+
+export type Callback<T> = (data: T) => void;
